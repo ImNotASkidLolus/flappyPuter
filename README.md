@@ -1,3 +1,5 @@
 # Simple game inspired by flappy bird for the M5Stack Cardputer and M5Stack Cardputer ADV
 <img src="images/flappyPuter.jpg" alt="photo"/>
 
+# Controls
+OK or Enter key - jump, start game
