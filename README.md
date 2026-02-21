@@ -2,4 +2,4 @@
 <img src="images/flappyPuter.jpg" alt="photo"/>
 
 # Controls
-OK or Enter key - jump, start game
+`OK or Enter key` - jump, start game
