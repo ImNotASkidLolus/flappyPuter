@@ -61,7 +61,7 @@ void setup() {
     pipeUp.emplace_back(Obstacle({(float)w, 0, 40, randomNum}));
     pipeDown.emplace_back(Obstacle({(float)w, (float)h - randomNum, 40, h - randomNum}));
 
-    position = {(float)m.Lcd.width() / 2, (float)m.Lcd.height() / 2, 30, 30};
+    position = {(float)m.Lcd.width() / 2, (float)m.Lcd.height() / 2, 20, 20};
 
 
     m.Display.setTextColor(TFT_WHITE);
@@ -150,14 +150,14 @@ void loop() {
             velocity.y += gravity;
             position.y += velocity.y * deltaTime;
             for (auto& pipes : pipeUp) {
-                pipes.rect.x -= 30 * deltaTime ;
+                pipes.rect.x -= 20 * deltaTime ;
                 if (pipes.rect.x + position.width < position.x && passed == false) {
                     score++;
                     passed = true;
                 }
             }
             for (auto& pipes : pipeDown) {
-                pipes.rect.x -= 30 * deltaTime;
+                pipes.rect.x -= 20 * deltaTime;
             }
 
             if (position.y >= h) {
